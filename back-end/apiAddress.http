@@ -1,0 +1,33 @@
+GET http://localhost:3333/address
+###
+GET http://localhost:3333/address/1
+###
+POST http://localhost:3333/address
+Content-Type: application/json
+
+{
+  "personId": 117,
+  "cep": "12345-678",
+  "address": "Rua Exemplo",
+  "number": "123",
+  "complement": "Apto 101",
+  "neighborhood": "Bairro Exemplo",
+  "state": "SP",
+  "city": "Cidade Exemplo"
+}
+###
+PUT http://localhost:3333/address/1
+Content-Type: application/json
+
+{
+  "personId": 1,
+  "cep": "12345-678 UPDATE 2.0",
+  "address": "Rua Exemplo UPDATE 2.0",
+  "number": "123 UPDATE 2.0",
+  "complement": "Apto 101 UPDATE 2.0",
+  "neighborhood": "Bairro Exemplo UPDATE 2.0",
+  "state": "SP UPDATE 2.0",
+  "city": "Cidade Exemplo UPDATE 2.0"
+}
+###
+DELETE http://localhost:3333/address/3

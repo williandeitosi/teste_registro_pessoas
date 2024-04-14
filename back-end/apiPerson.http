@@ -1,0 +1,28 @@
+GET http://localhost:3333/person
+###
+GET http://localhost:3333/person/117
+###
+
+GET http://localhost:3333/person/117/address
+###
+POST http://localhost:3333/person
+Content-Type: application/json
+
+{
+  "name": "willian",
+  "gender": "masculino",
+  "dataOfBirth": "07-09-1995",
+  "maritalStatus": "Solteiro"
+}
+###
+PUT http://localhost:3333/person/1
+Content-Type: application/json
+
+{
+  "name": "Rafaela update",
+  "gender": "Masculino",
+  "dataOfBirth": "07-09-1955",
+  "maritalStatus": "Solteiro"
+}
+###
+DELETE http://localhost:3333/person/37
